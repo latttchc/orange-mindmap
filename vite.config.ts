@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.GITHUB_PAGES ? "REPOSITORY_NAME" : "./",
+  base: process.env.GITHUB_PAGES ? "/orange-mindmap/" : "./",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
